@@ -1,0 +1,9 @@
+# Dataset de l'exercice 1 (≈ 127 Mo : dépasse la limite de 100 Mo de GitHub)
+household_power_consumption.txt
+household_power_consumption.zip
+individual+household+electric+power+consumption.zip
+
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.DS_Store

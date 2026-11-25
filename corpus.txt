@@ -1,0 +1,43 @@
+Le Transformer est une architecture de réseau de neurones introduite en 2017. Au lieu de lire les mots un par un, comme le fait un réseau récurrent, il regarde toute la phrase en même temps. Chaque mot peut consulter tous les autres mots pour comprendre son propre sens. C'est ce mécanisme, appelé attention, qui a changé le traitement du langage naturel.
+
+Dans une phrase, deux mots éloignés peuvent avoir une relation importante. Un réseau récurrent doit transmettre l'information d'une étape à l'autre, et une partie de cette information se perd en chemin. Le Transformer relie directement les positions de la séquence, ce qui lui permet de conserver les dépendances longues et de calculer toutes les représentations en parallèle.
+
+Pour chaque mot, le modèle calcule trois vecteurs. La requête exprime ce que le mot recherche. La clé indique ce que le mot propose pour être retrouvé. La valeur contient l'information qu'il apporte. Le produit entre les requêtes et les clés donne des scores, la fonction softmax transforme ces scores en poids, et la sortie est une somme pondérée des valeurs.
+
+Le professeur explique le fonctionnement du modèle aux étudiants. Il dessine au tableau une phrase simple, puis il montre comment chaque mot accorde plus ou moins d'attention aux autres. Les étudiants posent des questions, ils essaient de nouveaux exemples et ils comparent les résultats obtenus avec ceux du cours.
+
+Casablanca est la plus grande ville du Maroc. Elle est située au bord de l'océan Atlantique et elle accueille chaque jour des milliers d'étudiants, de travailleurs et de voyageurs. Le matin, les rues sont pleines de monde, les cafés ouvrent leurs portes et les trains arrivent de Rabat, de Marrakech et de Tanger.
+
+Rabat est la capitale du Maroc. La ville est calme, elle est très verte et ses jardins sont connus de tous. On y trouve de nombreuses écoles, des musées et des bâtiments anciens. Beaucoup d'étudiants habitent à Rabat ou à Salé et prennent le tramway pour aller à l'école chaque matin.
+
+Pour apprendre à écrire du texte, un petit modèle lit des milliers de caractères et essaie de deviner le suivant. Au début, il se trompe presque toujours et son texte n'a aucun sens. Après quelques centaines d'étapes, il apprend les lettres fréquentes, puis les syllabes, puis certains mots entiers. Plus le modèle s'entraîne, plus le texte devient lisible.
+
+La température règle le hasard pendant la génération. Quand elle est basse, le modèle choisit presque toujours le caractère le plus probable, et le texte devient sûr mais répétitif. Quand elle est élevée, le modèle prend plus de risques, et le texte devient varié mais plein d'erreurs. Il faut donc trouver un bon équilibre entre la prudence et la créativité.
+
+Le chat dort sur le canapé pendant que la pluie tombe sur la ville. Le chien attend près de la porte et regarde par la fenêtre. Dans la cuisine, la souris mange un morceau de fromage en faisant très peu de bruit. Le soir, toute la maison est calme et chacun retrouve sa place.
+
+Le projet de fin d'études demande beaucoup de travail. Il faut lire des articles, préparer des données, entraîner des modèles et vérifier chaque résultat avec soin. Une bonne équipe partage les tâches, discute des erreurs et garde une trace de toutes les expériences. À la fin, le rapport et la présentation montrent ce qui a été appris.
+
+Les données sont la matière première de l'intelligence artificielle. Un modèle ne peut apprendre que ce qu'il trouve dans les exemples qu'on lui donne. Si les données sont propres, variées et bien préparées, les résultats sont meilleurs. Si elles sont pleines d'erreurs ou de valeurs manquantes, le modèle apprend de mauvaises habitudes et se trompe plus souvent.
+
+Chaque matin, la lumière entre doucement dans la salle de cours. Les ordinateurs s'allument, les premières cellules du notebook s'exécutent et les courbes apparaissent à l'écran. On regarde d'abord l'erreur d'entraînement, puis l'erreur de validation. Quand les deux baissent ensemble, le modèle apprend vraiment quelque chose d'utile.
+
+Au printemps, les jardins de la ville se remplissent de fleurs et les étudiants révisent dehors. En été, il fait très chaud et tout le monde cherche un peu d'ombre. En hiver, la pluie revient et les bibliothèques sont pleines. Chaque saison a ses habitudes, et la vie de la ville suit un rythme que l'on reconnaît d'une année à l'autre.
+
+Un réseau récurrent lit une séquence dans l'ordre. À chaque étape, il combine la valeur courante avec sa mémoire précédente et produit un nouvel état. Cette mémoire est utile, mais elle reste fragile. Quand la séquence est longue, les gradients deviennent très petits pendant la rétropropagation et le réseau oublie le début de l'histoire.
+
+Le LSTM a été conçu pour mieux garder la mémoire. Il possède trois portes qui décident ce qu'il faut oublier, ce qu'il faut ajouter et ce qu'il faut montrer. Grâce à ces portes, l'information importante peut traverser de nombreuses étapes sans disparaître. Pourtant, le calcul reste séquentiel et il est difficile de l'accélérer sur une carte graphique.
+
+Le modèle GPT lit un texte de gauche à droite. À chaque position, il ne voit que les mots précédents, jamais les mots suivants. Il apprend ainsi à prédire le mot qui vient après, puis il utilise sa propre prédiction pour continuer la phrase. C'est ce qu'on appelle la génération autorégressive.
+
+Le modèle BERT fonctionne autrement. On cache quelques mots d'une phrase et le modèle doit les retrouver en regardant à la fois ce qui se trouve avant et ce qui se trouve après. Comme il voit les deux côtés du mot caché, il comprend très bien le sens d'un texte, mais il n'est pas fait pour écrire une longue suite de phrases.
+
+Pour prévoir la consommation électrique d'une maison, on mesure la puissance chaque minute pendant plusieurs années. On calcule ensuite la moyenne de chaque heure et on essaie de prédire l'heure suivante à partir des vingt-quatre dernières. Les habitudes des habitants créent des motifs réguliers : un pic le matin, un creux l'après-midi et une grande consommation le soir.
+
+Avant de croire un résultat, il faut le comparer à une référence simple. Prédire que la prochaine heure sera identique à la précédente est très facile et donne déjà de bons résultats. Prédire que l'heure sera la même qu'hier à la même heure est une autre référence naturelle. Un modèle compliqué n'a de valeur que s'il fait mieux que ces méthodes simples.
+
+Dans un bon dépôt, le code est organisé et chaque fichier a un rôle clair. Le fichier de présentation explique le projet, la liste des bibliothèques permet de reproduire l'environnement et les gros fichiers de données restent en dehors du dépôt. Quand un autre étudiant ouvre le projet, il doit pouvoir le lancer sans poser de question.
+
+Le soir, quand la ville se calme, le vent vient de la mer et les lumières s'allument une à une. Les cafés restent ouverts tard, les conversations se mélangent et la musique passe d'une terrasse à l'autre. On parle de l'école, des examens, des projets et des voyages que l'on espère faire un jour.
+
+Apprendre demande de la patience. Il faut essayer, se tromper, comprendre pourquoi, puis recommencer avec une meilleure idée. Chaque erreur donne une information, et chaque petite victoire donne envie d'aller plus loin. Les modèles apprennent de la même façon : ils ajustent leurs paramètres un peu à chaque étape, jusqu'à ce que les prédictions deviennent justes.
